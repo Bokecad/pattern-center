@@ -7,6 +7,6 @@ export default {
         }
     },
     created(){
-        console.log('this home page')
+        console.log('this hompage')
     }
 }

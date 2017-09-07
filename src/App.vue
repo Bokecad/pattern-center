@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style lang="less">
+@test: #00ff00;
 #app {
 
 }
