@@ -13,6 +13,14 @@ export default new Router({
       name: 'Home',
       component: Home
     },
+<<<<<<< HEAD
     
+=======
+    {
+      path: '/hello',
+      name: 'Hello',
+      component: Hello
+    }
+>>>>>>> origin/dev
   ]
 })
