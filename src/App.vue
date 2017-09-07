@@ -16,8 +16,10 @@ export default {
 </script>
 
 <style lang="less">
-@test: #00ff00;
-#app {
 
+#app {
+  .wrap1{width:1280px;}
+  .wrap2{width:1200px;}
 }
+
 </style>
