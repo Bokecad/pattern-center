@@ -11,14 +11,13 @@
         <div class="author" :style="{width: width-20 + 'px',height: height * 60/350 + 'px'}">
             <img class="avatar" v-lazy="avatar" alt="">
             <div>{{authorName}}</div>
-            <img v-lazy="grade" alt="" class="authorGrade">
+            <img :src="grade" alt="" class="authorGrade">
         </div>
     </div>
 </template>
 <script>
 var VueLogo = require('@/assets/logo.png');
-var moneyLogo = require('@/assets/logo.png');
-var grade = require('@/assets/logo.png');
+var moneyLogo = require('@/assets/priceIcon.png');
 export default {
     props:{
         // sample's height
@@ -65,14 +64,19 @@ export default {
             type: Number,
             default: 1
         },
+        prize: {
+            type: String,
+            default: 'prize1'
+        }
     },
     data() {
         return {
             moneyLogo,
-            grade,
+            grade: ''
         }
     },
     created(){
+        this.grade = require(`../assets/${this.prize}.png`);
     }
 }
 </script>
@@ -96,8 +100,8 @@ export default {
             border-radius: 50%;
         }
         .authorGrade{
-            height: 36px;
-            width: 36px;
+            height: 23px;
+            width: 14px;
             position: absolute;
             right: 10px;
         }
@@ -107,10 +111,12 @@ export default {
         padding: 0 10px;
     }
     .sales{
+        margin-top:16px;
         img{
             width: 21px;
             height: 21px;
             display: block;
+            margin-right: 10px;
             float: left;
         }
         span:last-child{

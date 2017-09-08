@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
-    <sample></sample>
+    <sample prize="prize2"></sample>
     <navi-top></navi-top>
     <personal-header></personal-header>
+    <regHome></regHome>
   </div>
 </template>
 
@@ -11,6 +12,7 @@ import { mapGetters,mapActions } from 'vuex';
 import Sample from '@/components/sample.vue';
 import NaviTop from '@/components/NaviTop.vue';
 import PersonalHeader from '@/components/PersonalHeader.vue';
+import regHome from '@/components/registered/regHome.vue';
 
 
 export default {
@@ -40,7 +42,8 @@ export default {
   components: {
     Sample,
     PersonalHeader,
-    NaviTop
+    NaviTop,
+    regHome
   }
 }
 </script>
