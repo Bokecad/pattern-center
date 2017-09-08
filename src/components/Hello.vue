@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <sample></sample>
+    <navi-top></navi-top>
     <personal-header></personal-header>
   </div>
 </template>
@@ -8,6 +9,7 @@
 <script>
 import { mapGetters,mapActions } from 'vuex';
 import Sample from '@/components/sample.vue';
+import NaviTop from '@/components/NaviTop.vue';
 import PersonalHeader from '@/components/PersonalHeader.vue';
 
 
@@ -37,7 +39,8 @@ export default {
   },
   components: {
     Sample,
-    PersonalHeader
+    PersonalHeader,
+    NaviTop
   }
 }
 </script>
