@@ -1,12 +1,14 @@
 <template>
   <div class="hello">
-    <sample></sample>
+    <!-- <sample></sample> -->
+    <reg-home></reg-home>
   </div>
 </template>
 
 <script>
 import { mapGetters,mapActions } from 'vuex';
 import Sample from '@/components/sample.vue';
+import RegHome from '@/components/registered/regHome.vue';
 
 
 export default {
@@ -34,7 +36,7 @@ export default {
     
   },
   components: {
-    Sample
+    Sample,RegHome
   }
 }
 </script>

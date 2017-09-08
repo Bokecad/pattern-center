@@ -10,6 +10,7 @@ img{border: none;vertical-align: middle;}
 address,caption,cite,code,dfn,th,var {font-style: normal;font-weight: normal;}
 caption,th {text-align: left;}
 h1,h2,h3,h4,h5,h6 {font-size: 100%;}
+hr{border-top:1px solid @line}
 
 .clearfix:after { content:""; display:block; height:0; visibility:hidden; clear:both; }
 .clearfix { *zoom:1; }
@@ -42,8 +43,16 @@ h1,h2,h3,h4,h5,h6 {font-size: 100%;}
 @fz-s:14px;
 
 
+// 图标
+@font-face {
+    font-family: 'Boke';
+    src: url('../../assets/iconfont.ttf')format('truetype'),
+        url('../../assets/iconfont.woff')format('woff');
+}
 
-
+body{
+    font-family: 'Boke'
+}
 
 
 
