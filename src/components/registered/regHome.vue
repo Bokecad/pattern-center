@@ -13,7 +13,9 @@
                 <el-form-item>
                     <el-row :gutter="10">
                         <el-col :span="16">
-                            <el-input placeholder="请输入验证码"></el-input>
+                            <el-input placeholder="请输入验证码" >
+                                
+                            </el-input>
                         </el-col>
                         <el-col :span="7">
                             <el-button type="primary">获取验证码</el-button>
@@ -21,10 +23,11 @@
                     </el-row>
                 </el-form-item>
                 <el-form-item>
-                    <el-input placeholder="请输入密码，建议6-15位字母与数字组合" style="width:100%;"></el-input>
+                    <el-input placeholder="请输入密码，建议6-15位字母与数字组合" icon="suotouguan"  style="width:100%;"></el-input>
                 </el-form-item>
+                <i class="el-icon-suotouguan"></i>
+
             </el-form>
-             
         </div>
         <div class="content-right"></div>
     </div>
@@ -47,6 +50,7 @@ export default {
 </script>
 <style lang="less" scoped>
     @import url('../../pages/style/common.less');
+    //@import url('//at.alicdn.com/t/font_410039_f6o3i15fa5g66r.css');
     .reg-home{
         width: 650px;
         height: 450px;
