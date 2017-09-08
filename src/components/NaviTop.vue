@@ -2,7 +2,7 @@
   <div class="naviTop">
       <div class="wrap2">
         <el-row>
-            <el-col :span="12">
+            <el-col :span="24">
                 <div class="">
                     <span>个人中心</span>
                     <span>退出</span>
@@ -25,6 +25,10 @@
 .naviTop {
     height: 40px;
     background:#222;
+    color: @f-white;
+    line-height: 40px;
+    text-align: right;
+    font-size: 14px;
 }
 
 

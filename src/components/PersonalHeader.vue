@@ -7,7 +7,8 @@
         <div class="wrap2">
             <el-row>
                 <el-col :span="8">
-                        dsaf
+                        <el-input icon="gengduo"></el-input>
+                        
                 </el-col>
                 <el-col :span="16">
                     <el-menu :default-active="activeIndex2" class="el-menu-demo" mode="horizontal" @select="handleSelect">
@@ -61,6 +62,7 @@
 
 <style lang="less" scoped>
 @import url('../pages/style/common.less');
+@import url("//at.alicdn.com/t/font_410039_wifgm6dlieqdj9k9.css");
 .wrap2{width:1200px;margin:0 auto;}
 .navi{
     padding:30px 0px;
