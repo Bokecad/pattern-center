@@ -1,25 +1,16 @@
 <template>
   <div class="hello">
-<<<<<<< HEAD
-    <!-- <sample></sample> -->
-    <reg-home></reg-home>
-=======
     <sample></sample>
     <navi-top></navi-top>
     <personal-header></personal-header>
->>>>>>> origin/feature-m
   </div>
 </template>
 
 <script>
 import { mapGetters,mapActions } from 'vuex';
 import Sample from '@/components/sample.vue';
-<<<<<<< HEAD
-import RegHome from '@/components/registered/regHome.vue';
-=======
 import NaviTop from '@/components/NaviTop.vue';
 import PersonalHeader from '@/components/PersonalHeader.vue';
->>>>>>> origin/feature-m
 
 
 export default {
