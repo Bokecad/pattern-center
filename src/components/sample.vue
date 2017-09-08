@@ -4,19 +4,21 @@
         <div class="content" :style="{width: width-20 + 'px',height: height * 89/350 +'px'}">
             <span>{{name}}</span>
             <p class="sales">
-                <img v-lazy="imgUrl" alt="">
+                <img v-lazy="moneyLogo" alt="">
                 <span style="color:#ff165d">{{price}}</span><span>/次</span><span>销售{{sales}}件</span>
             </p>
         </div>
         <div class="author" :style="{width: width-20 + 'px',height: height * 60/350 + 'px'}">
             <img class="avatar" v-lazy="avatar" alt="">
             <div>{{authorName}}</div>
-            <img v-lazy="avatar" alt="" class="authorGrade">
+            <img v-lazy="grade" alt="" class="authorGrade">
         </div>
     </div>
 </template>
 <script>
 var VueLogo = require('@/assets/logo.png');
+var moneyLogo = require('@/assets/logo.png');
+var grade = require('@/assets/logo.png');
 export default {
     props:{
         // sample's height
@@ -66,6 +68,8 @@ export default {
     },
     data() {
         return {
+            moneyLogo,
+            grade,
         }
     },
     created(){
@@ -73,11 +77,12 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+    @import url('../pages/style/common.less');
     .sample{
-        border: 1px solid #000;
+        border: 1px solid @border;
     }
     .author{
-        border-top: 1px solid #000;
+        border-top: 1px solid @border;
         padding: 0 10px;
         display: flex;
         align-items: center;
