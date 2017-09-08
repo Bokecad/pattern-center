@@ -10,9 +10,9 @@
                         dsaf
                 </el-col>
                 <el-col :span="16">
-                    <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-                        <el-menu-item index="1">处理中心</el-menu-item>
-                    </el-menu>
+                    <ul>
+                        <li></li>
+                    </ul>
                 </el-col>
             </el-row>
         </div>

@@ -1,12 +1,14 @@
 <template>
   <div class="hello">
     <sample></sample>
+    <personal-header></personal-header>
   </div>
 </template>
 
 <script>
 import { mapGetters,mapActions } from 'vuex';
 import Sample from '@/components/sample.vue';
+import PersonalHeader from '@/components/PersonalHeader.vue';
 
 
 export default {
@@ -34,7 +36,8 @@ export default {
     
   },
   components: {
-    Sample
+    Sample,
+    PersonalHeader
   }
 }
 </script>
