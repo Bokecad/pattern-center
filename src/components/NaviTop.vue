@@ -3,8 +3,9 @@
       <div class="wrap2">
         <el-row>
             <el-col :span="12">
-                <div>
-
+                <div class="">
+                    <span>个人中心</span>
+                    <span>退出</span>
                 </div>
             </el-col>
             
