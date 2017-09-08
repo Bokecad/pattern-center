@@ -38,13 +38,9 @@ export default {
     
   },
   components: {
-<<<<<<< HEAD
-    Sample,RegHome
-=======
     Sample,
     PersonalHeader,
     NaviTop
->>>>>>> origin/feature-m
   }
 }
 </script>
